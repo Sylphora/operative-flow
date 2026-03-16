@@ -394,13 +394,21 @@
       }
       .tbl-total td {
         font-weight: 800;
-        background: linear-gradient(135deg, #1a2d47 0%, #274260 100%) !important;
+        background: linear-gradient(
+          135deg,
+          #1a2d47 0%,
+          #274260 100%
+        ) !important;
         color: var(--white);
         border-top: 2px solid #ffd966;
       }
       .tbl-subtotal td {
         font-weight: 700;
-        background: linear-gradient(135deg, rgba(39, 181, 210, 0.1) 0%, rgba(39, 181, 210, 0.05) 100%) !important;
+        background: linear-gradient(
+          135deg,
+          rgba(39, 181, 210, 0.1) 0%,
+          rgba(39, 181, 210, 0.05) 100%
+        ) !important;
         color: var(--navy);
         border-top: 2px solid var(--cyan);
       }
@@ -773,29 +781,330 @@
         letter-spacing: 0.4px;
       }
 
-      @media (max-width: 760px) {
+      @media (max-width: 768px) {
+        /* Header */
+        .site-header {
+          padding: 0 16px;
+          height: 48px;
+        }
+        .site-header .brand {
+          font-size: 13px;
+          gap: 6px;
+        }
+        .version-badge {
+          font-size: 9px;
+          padding: 1px 7px;
+        }
+
+        /* Hero */
+        .hero {
+          padding: 36px 16px 32px;
+        }
+        .hero h1 {
+          font-size: 24px;
+          margin-bottom: 8px;
+        }
+        .hero-sub {
+          font-size: 13px;
+          margin-bottom: 16px;
+        }
+        .hero-badges {
+          gap: 8px;
+        }
+        .hero-badge {
+          font-size: 11px;
+          padding: 4px 12px;
+        }
+
+        /* KPI Grid */
         .kpi-grid {
           grid-template-columns: repeat(2, 1fr);
+          gap: 12px;
+          padding: 24px 16px;
         }
+        .kpi-card {
+          padding: 14px 12px 10px;
+        }
+        .kpi-label {
+          font-size: 10px;
+          margin-bottom: 6px;
+        }
+        .kpi-value {
+          font-size: 24px;
+          margin-bottom: 4px;
+        }
+        .kpi-desc {
+          font-size: 10px;
+        }
+
+        /* Sections */
+        .sections {
+          padding: 0 16px 40px;
+          gap: 16px;
+        }
+        .section-header {
+          padding: 14px 16px 10px;
+          gap: 8px;
+        }
+        .section-header h2 {
+          font-size: 14px;
+        }
+        .section-body {
+          padding: 16px;
+        }
+        .subsec {
+          margin-bottom: 20px;
+        }
+        .subsec-title {
+          font-size: 12px;
+          margin-bottom: 8px;
+        }
+        .subsec-note {
+          font-size: 11px;
+          padding: 6px 10px;
+          margin-bottom: 10px;
+        }
+
+        /* Tables */
+        table {
+          font-size: 12px;
+        }
+        thead th {
+          padding: 10px 10px;
+          font-size: 10px;
+        }
+        td {
+          padding: 8px 10px;
+        }
+        td.num {
+          font-size: 13px;
+        }
+
+        /* Timeline */
+        .phase-line {
+          width: 32px;
+        }
+        .phase-dot {
+          width: 12px;
+          height: 12px;
+        }
+        .phase-vert {
+          width: 1.5px;
+        }
+        .phase-body {
+          padding: 0 0 16px 2px;
+        }
+        .phase-tag {
+          font-size: 9px;
+          padding: 1px 6px;
+          margin-bottom: 3px;
+        }
+        .phase-title {
+          font-size: 12px;
+          margin-bottom: 2px;
+        }
+        .phase-desc {
+          font-size: 11px;
+        }
+
+        /* Payment Cards */
         .payment-grid,
         .cloud-grid {
           grid-template-columns: 1fr;
+          gap: 12px;
         }
-        .hero h1 {
-          font-size: 22px;
+        .pay-card,
+        .cloud-card {
+          padding: 14px;
         }
-        .site-header {
-          padding: 0 16px;
+        .pay-card h3,
+        .cloud-card h3 {
+          font-size: 12px;
+          margin-bottom: 8px;
         }
-        .kpi-grid,
-        .sections {
-          padding-left: 16px;
-          padding-right: 16px;
+        .pay-total {
+          font-size: 18px;
+        }
+        .cloud-price {
+          font-size: 20px;
+        }
+        .pay-dual-total {
+          margin: 8px 0 10px;
+        }
+        .pay-scenario {
+          padding: 8px 6px;
+        }
+        .pay-scenario-label {
+          font-size: 9px;
+        }
+        .pay-scenario-value {
+          font-size: 16px;
+        }
+        .pay-scenario-divider {
+          height: 40px;
+        }
+        .pay-table {
+          font-size: 11px;
+        }
+
+        /* Footer */
+        .site-footer {
+          flex-direction: column;
+          align-items: flex-start;
+          padding: 16px;
+          gap: 10px;
         }
       }
-      @media (max-width: 500px) {
+
+      @media (max-width: 480px) {
+        /* Header */
+        .site-header {
+          padding: 0 12px;
+        }
+        .site-header .brand {
+          font-size: 12px;
+        }
+        .header-right {
+          font-size: 11px;
+        }
+
+        /* Hero */
+        .hero {
+          padding: 24px 12px 24px;
+        }
+        .hero h1 {
+          font-size: 20px;
+          margin-bottom: 6px;
+        }
+        .hero-eyebrow {
+          font-size: 10px;
+          padding: 3px 10px;
+          margin-bottom: 12px;
+        }
+        .hero-sub {
+          font-size: 12px;
+          margin-bottom: 12px;
+        }
+
+        /* KPI Grid */
         .kpi-grid {
           grid-template-columns: 1fr;
+          gap: 10px;
+          padding: 16px 12px;
+        }
+        .kpi-card {
+          padding: 12px 10px 8px;
+          border-left-width: 3px;
+        }
+        .kpi-label {
+          font-size: 9px;
+          margin-bottom: 4px;
+        }
+        .kpi-value {
+          font-size: 20px;
+          margin-bottom: 3px;
+        }
+
+        /* Sections */
+        .sections {
+          padding: 0 12px 30px;
+          gap: 12px;
+        }
+        .section-header {
+          padding: 12px 12px 8px;
+        }
+        .section-body {
+          padding: 12px;
+        }
+
+        /* Chips */
+        .chip-grid {
+          gap: 6px;
+          margin-top: 2px;
+        }
+        .chip {
+          font-size: 11px;
+          padding: 3px 10px;
+        }
+
+        /* Tables - scroll horizontal */
+        .tbl-wrap {
+          -webkit-overflow-scrolling: touch;
+          border-radius: 4px;
+        }
+        table {
+          font-size: 11px;
+          min-width: 100%;
+        }
+        thead th {
+          padding: 8px 8px;
+          font-size: 9px;
+        }
+        td {
+          padding: 6px 8px;
+        }
+        td.num {
+          font-size: 12px;
+        }
+
+        /* Timeline */
+        .phase-line {
+          width: 28px;
+        }
+        .phase-dot {
+          width: 10px;
+          height: 10px;
+          margin-top: 1px;
+        }
+        .phase-title {
+          font-size: 11px;
+        }
+        .phase-desc {
+          font-size: 10px;
+        }
+        .phase-dur {
+          font-size: 10px;
+        }
+
+        /* Payment & Cloud Cards */
+        .pay-card-badge,
+        .cloud-rec-badge {
+          font-size: 9px;
+          padding: 1px 8px;
+          top: -9px;
+          left: 12px;
+        }
+        .pay-card h3,
+        .cloud-card h3 {
+          font-size: 11px;
+        }
+        .pay-total {
+          font-size: 16px;
+        }
+        .cloud-price {
+          font-size: 18px;
+        }
+        .pay-scenario-label {
+          font-size: 8px;
+        }
+        .pay-scenario-value {
+          font-size: 14px;
+        }
+
+        /* Scenario Note */
+        .scenario-note {
+          font-size: 11px;
+          padding: 10px 12px;
+          margin-bottom: 12px;
+        }
+
+        /* Footer */
+        .site-footer {
+          padding: 12px;
+          font-size: 11px;
+        }
+        .footer-brand {
+          font-size: 12px;
         }
       }
     </style>
